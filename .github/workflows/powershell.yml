@@ -39,7 +39,7 @@ jobs:
           path: .\
           recurse: true
           #customRulePath: '".\CustomRule\AvoidUsingPlainTextPassword.cs"'
-          IncludeDefaultRules: true
+          #IncludeDefaultRules: true
           # Include your own basic security rules. Removing this option will run all the rules
           excludeRule: '"PSAvoidTrailingWhitespace", "PSUseSingularNouns"'
           severity: '"Error", "Warning"'
