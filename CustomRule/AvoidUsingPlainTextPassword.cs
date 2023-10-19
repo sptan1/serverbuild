@@ -32,7 +32,7 @@ namespace Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules
             IEnumerable<Ast> paramAsts = ast.FindAll(testAst => testAst is ParameterAst, true);
 
             #List<String> passwords = new List<String>() {"Password", "Passphrase", "Cred", "Credential"};
-            List<String> passwords = new List<String>() {"Pass", "Passcode", "Secret", "Pwd"};
+            List<String> passwords = new List<String>() {"Password", "Passphrase", "Cred", "Credential","Pass", "Passcode", "Secret", "Pwd", "Passphrase","Passwords","Passphrases"."Secrets"};
 
             // Iterates all ParamAsts and check if their names are on the list.
             foreach (ParameterAst paramAst in paramAsts)
@@ -161,7 +161,7 @@ namespace Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules
         /// <returns></returns>
         public RuleSeverity GetSeverity()
         {
-            return RuleSeverity.Warning;
+            return RuleSeverity.High;
         }
 
         /// <summary>
