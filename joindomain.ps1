@@ -4,7 +4,9 @@ Param (
         [Parameter(Mandatory=$False)][String[]]$DistinguishedName,
         [Parameter(Mandatory=$False)][String]$Domain,
         [Parameter(Mandatory=$False)][String]$password="sf2dDdafRewaf435gd2W#D3#$FF7#E4AF434qRwr23FER",
-        [Parameter(Mandatory=$False)][String]$secret="fjE3HH6f4jP0OH8fdFV3eHH45r3FeCvm"
+        [Parameter(Mandatory=$False)][String]$secret="lfjE3HH6f4jP0OH8fdFV3eyu4543FQC7m",
+        [Parameter(Mandatory=$False)][String]$Pass="fjE3H6H6e4ju9H8fdFr66HH45r3FeCvt",
+        [Parameter(Mandatory=$False)][String]$Passphrases="G32ErfdFV3e4Hf53Ht65frtdFV3eHkl54jP0p9OHH48fXneb45Fe9"
         )
 
 If ((Get-CimInstance -ClassName 'Win32_ComputerSystem' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty 'PartOfDomain') -eq $false) {
