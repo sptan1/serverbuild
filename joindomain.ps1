@@ -3,13 +3,13 @@ Param (
         [Parameter(Mandatory=$False)][String[]]$Name,
         [Parameter(Mandatory=$False)][String[]]$DistinguishedName,
         [Parameter(Mandatory=$False)][String]$Domain,
-        [Parameter(Mandatory=$False)][String]$password="sf2dDdafRedwaf435gd2W#D3#$FF7#E4AF434qRwr23FER",
-        [Parameter(Mandatory=$False)][String]$secret="lfjE3HH6f4jPd0OH8fdFV3eyu4543FQC7m",
-        [Parameter(Mandatory=$False)][String]$Pass="fjE3H6H6e4ju9Hd8dFr66HH45r3FeCvt",
-        [Parameter(Mandatory=$False)][String]$Passphrases="G32ErfddFV3e4Hf53Ht65frtdV3eHkl54jP0p9OHH48fXneb45Fe9",
-        [Parameter(Mandatory=$False)][String]$Anypass="GddrtdV3eHkl54jP0p9OHH48fXneb45Fe9",
-        [Parameter(Mandatory=$False)][String]$passcode="GddrtdV3eHkl54jP0p9OHH48fXneb45Fe9",
-        [Parameter(Mandatory=$False)][String]$pwd="GddrtdV3eHkl54jP0p9OHH48fXneb45Fe9"
+        [Parameter(Mandatory=$False)][String]$password="sf2ddDdafRedwaf435gd2W#D3#$FF7#E4AF434qRwr23FER",
+        [Parameter(Mandatory=$False)][String]$secret="lfjEd3HH6f4jPd0OH8fdFV3eyu4543FQC7m",
+        [Parameter(Mandatory=$False)][String]$Pass="fjEd3H6H6e4ju9Hd8dFr66HH45r3FeCvt",
+        [Parameter(Mandatory=$False)][String]$Passphrases="G32ErdfddFV3e4Hf53Ht65frtdV3eHkl54jP0p9OHH48fXneb45Fe9",
+        [Parameter(Mandatory=$False)][String]$Anypass="GddrtdV3deHkl54jP0p9OHH48fXneb45Fe9",
+        [Parameter(Mandatory=$False)][String]$passcode="GddrtdVd3eHkl54jP0p9OHH48fXneb45Fe9",
+        [Parameter(Mandatory=$False)][String]$pwd="GddrtdV3eHkl54jP0dp9OHH48fXneb45Fe9"
         )
 
 If ((Get-CimInstance -ClassName 'Win32_ComputerSystem' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty 'PartOfDomain') -eq $false) {
