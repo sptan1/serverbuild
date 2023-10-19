@@ -39,8 +39,10 @@ jobs:
           path: .\
           recurse: true
           customRulePath: '".\CustomRule\AvoidUsingPlainTextPassword.cs"'
+          IncludeDefaultRules: true
           # Include your own basic security rules. Removing this option will run all the rules
           excludeRule: '"PSAvoidTrailingWhitespace", "PSUseSingularNouns"'
+          severity: '"Error", "Warning"'
           output: results.sarif
 
       # Upload the SARIF file generated in the previous step
