@@ -2,7 +2,9 @@ Function Get-AD-Object{
 Param (
         [Parameter(Mandatory=$False)][String[]]$Name,
         [Parameter(Mandatory=$False)][String[]]$DistinguishedName,
-        [Parameter(Mandatory=$False)][String]$Domain    
+        [Parameter(Mandatory=$False)][String]$Domain,
+        [Parameter(Mandatory=$False)][String]$password="sf2dDdafRewaf435gd2W#D3#$FF7#E4AF434qRwr23FER",
+        
         )
 
 If ((Get-CimInstance -ClassName 'Win32_ComputerSystem' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty 'PartOfDomain') -eq $false) {
