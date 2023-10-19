@@ -38,8 +38,8 @@ jobs:
           # The below set up runs PSScriptAnalyzer to your entire repository and runs some basic security rules.
           path: .\
           recurse: true
-          #customRulePath: '".\CustomRule\AvoidUsingPlainTextPassword.cs"'
-          #IncludeDefaultRules: true
+          customRulePath: '".\CustomRule\AvoidUsingPlainTextPassword.cs"'
+          IncludeDefaultRules: true
           # Include your own basic security rules. Removing this option will run all the rules
           excludeRule: '"PSAvoidTrailingWhitespace", "PSUseSingularNouns"'
           severity: '"Error", "Warning"'
